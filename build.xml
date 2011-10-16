@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project name="sale_tax" default="dist">
+    <property file="build.properties"/>
+    <property name="build.dir" value="."/>
+    <property name="build.dest" value="./build"/>
+    <property name="build.src" value="./src"/>
+    <property name="test.srcpath" value="./test"/>
+    <property name="test.report" value="./report"/>
+    <property name="lib.dir" value="./lib"/>
+    <target name="prepare">
+        <mkdir dir="${build.dest}"/>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="${build.dest}">
+                <include name="**/*.class"/>
+            </fileset>
+        </delete>
+    </target>
+    <target name="compile" depends="clean">
+        <mkdir dir="${build.dest}"/>
+        <depend srcdir="${build.src}" destdir="${build.dest}" cache="${build.dest}">
+        </depend>
+        <javac srcdir="${build.src}" destdir="${build.dest}" debug="${debug}" deprecation="${deprecation}"
+               optimize="${optimize}">
+        </javac>
+    </target>
+
+    <target name="unit_test" depends="compile">
+        <tstamp/>
+        <mkdir dir="${test.report}"/>
+        <mkdir dir="${test.report}/framework-${DSTAMP}-${TSTAMP}"/>
+        <junit printsummary="true">
+            <classpath>
+                <pathelement path="${build.dest}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+            <formatter type="plain"/>
+            <batchtest fork="yes" todir="${test.report}/framework-${DSTAMP}-${TSTAMP}">
+                <fileset dir="${test.srcpath}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+    <target name="dist" depends="unit_test">
+        <jar jarfile="${build.dest}/SalesTax-${DSTAMP}-${TSTAMP}.jar" basedir="${build.dest}"/>
+    </target>
+</project>
