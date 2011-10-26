@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b50dc4c4-db24-414c-b438-41c5f40e6a84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SaleTax.iml" afterPath="$PROJECT_DIR$/SaleTax.iml" />
-    </list>
+    <list default="true" id="b50dc4c4-db24-414c-b438-41c5f40e6a84" name="Default" comment="" />
     <ignored path="SaleTax.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CalculateTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CalculateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="45" selection-start="836" selection-end="836" vertical-scroll-proportion="-0.11702128">
+            <state line="37" column="70" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stuff.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Stuff.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Stuff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+            <state line="10" column="27" selection-start="339" selection-end="339" vertical-scroll-proportion="0.26595744">
               <folding />
             </state>
           </provider>
@@ -635,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stuff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/InputAnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="51" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
@@ -676,10 +665,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CalculateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="836" selection-end="836" vertical-scroll-proportion="-0.11702128">
+        <state line="37" column="70" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stuff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="27" selection-start="339" selection-end="339" vertical-scroll-proportion="0.26595744">
+          <folding />
         </state>
       </provider>
     </entry>
